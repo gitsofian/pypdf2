@@ -1,5 +1,7 @@
 import PyPDF2
 
+# rotate page using PyPDF2 3.0.1 version
+
 # exchange the 'original.pdf' with a name of your file
 pdfIn = open('original.pdf', 'rb')
 pdfReader = PyPDF2.PdfReader(pdfIn)
