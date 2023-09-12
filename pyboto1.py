@@ -21,11 +21,13 @@ def upload_file():
 my_w = tk.Tk()
 my_w.geometry("450x400")
 my_w.title("AWS Textract")
+my_font1 = ('times', 18, 'bold')
 l1 = tk.Label(my_w, text="Upload an image",
-              width=30, font=('times', 18, 'bold'))
-b1 = tk.Button(my_w, text='Upload a file und see what it has!',
-               width=30, command=upload_file)
+              width=30, font=my_font1)
+l1.pack()
 
+b1 = tk.Button(my_w, text='Upload a file und see what it has!',
+               width=30, command=lambda: upload_file())
 b1.pack()
 
 my_w.mainloop()
