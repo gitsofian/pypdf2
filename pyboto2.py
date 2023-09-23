@@ -11,7 +11,6 @@ img.show()
 # alternative way to import image
 with Image.open("./images/textract.jpg", mode="r", formats=None) as image:
     image.show()
- 
 
 
 def upload_file():

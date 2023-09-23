@@ -27,5 +27,5 @@ resp = client.detect_document_text(
 )
 
 for block in resp["Blocks"]:
-    if block["BlockType"]=="LINE": #WORD or LINE
+    if block["BlockType"] == "LINE":  # WORD or LINE
         print(block["Text"])
